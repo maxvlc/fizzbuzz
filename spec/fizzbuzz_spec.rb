@@ -14,4 +14,8 @@ describe "fizzbuzz player" do
   it "replies Buzz to five" do
     expect(Player.play(5)).to eq "Buzz"
   end
+
+  it "replies Fizz to six" do
+    expect(Player.play(6)).to eq "Fizz"
+  end
 end
