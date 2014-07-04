@@ -5,13 +5,12 @@ class Player
 	FIZZ_NUMBER = 3
 	BUZZ_NUMBER = 5
 	FIZZBUZZ = "FizzBuzz"
-	FIZZBUZZ_NUMBER = 15
 
 	def self.play(number)
 		result = number.to_s
 		result = FIZZ if is_fizz?(number)
 		result = BUZZ if is_buzz?(number)
-		return FIZZBUZZ if number == FIZZBUZZ_NUMBER
+		result = FIZZBUZZ if is_fizzbuzz?(number)
 		return result
 	end
 
@@ -29,5 +28,9 @@ class Player
 
 	def self.multiple_of_five?(number)
 		number%BUZZ_NUMBER == 0
+	end
+
+	def self.is_fizzbuzz?(number)
+		is_fizz?(number) && is_buzz?(number)
 	end
 end

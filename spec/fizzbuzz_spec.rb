@@ -17,7 +17,8 @@ describe "fizzbuzz player" do
     expect(Player.play(10)).to eq "Buzz"
   end
 
-  it "replies FizzBuzz to fifteen" do
+  it "replies FizzBuzz to multiple of both" do
     expect(Player.play(15)).to eq "FizzBuzz"
+    expect(Player.play(30)).to eq "FizzBuzz"
   end
 end
