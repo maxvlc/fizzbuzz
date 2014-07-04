@@ -4,11 +4,14 @@ class Player
 	BUZZ = "Buzz"
 	FIZZ_NUMBER = 3
 	BUZZ_NUMBER = 5
+	FIZZBUZZ = "FizzBuzz"
+	FIZZBUZZ_NUMBER = 15
 
 	def self.play(number)
 		result = number.to_s
 		result = FIZZ if is_fizz?(number)
 		result = BUZZ if is_buzz?(number)
+		return FIZZBUZZ if number == FIZZBUZZ_NUMBER
 		return result
 	end
 
