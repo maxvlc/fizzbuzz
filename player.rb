@@ -9,7 +9,12 @@ class Player
 		result = number.to_s
 		result = FIZZ if is_fizz_number?(number)
 		result = BUZZ if is_buzz_number?(number)
+		result = FIZZ+BUZZ if is_fizzbuzz_number?(number)
 		result
+	end
+
+	def self.is_fizzbuzz_number?(number)
+		is_fizz_number?(number) && is_buzz_number?(number)
 	end
 
 	def self.is_fizz_number?(number)
