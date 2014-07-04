@@ -6,9 +6,10 @@ class Player
 	BUZZ_NUMBER = 5
 
 	def self.play(number)
+		result = number.to_s
 		return FIZZ if is_fizz?(number)
 		return BUZZ if is_buzz?(number)
-		number.to_s
+		return result
 	end
 
 	def self.is_fizz?(number)
