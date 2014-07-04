@@ -16,4 +16,8 @@ describe "fizzbuzz player" do
 		expect(Player.play(5)).to eq "Buzz"
 		expect(Player.play(10)).to eq "Buzz"
 	end
+
+	it "prints FizzBuzz if number is fifteen" do
+		expect(Player.play(15)).to eq "FizzBuzz"
+	end
 end
