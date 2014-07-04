@@ -10,4 +10,8 @@ describe "fizzbuzz player" do
 		expect(Player.play(2)).to eq "2"
 	end
 
+	it "prints Fizz if number is three" do
+		expect(Player.play(3)).to eq "Fizz"
+	end
+
 end
