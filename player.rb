@@ -1,8 +1,11 @@
 class Player
 
+	FIZZ_NUMBER = 3
+	FIZZ = "Fizz"
+
 	def self.play(number)
-		return "2" if number == 2
-		return "Fizz" if number == 3
-		"1"
+		result = number.to_s
+		result = FIZZ if number == FIZZ_NUMBER
+		result
 	end
 end
