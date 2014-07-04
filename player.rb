@@ -17,10 +17,14 @@ class Player
 	end
 
 	def self.is_buzz?(number)
-		number == BUZZ_NUMBER
+		return BUZZ_NUMBER if multiple_of_five?(number)
 	end
 
 	def self.multiple_of_three?(number)
 		number%FIZZ_NUMBER == 0
+	end
+
+	def self.multiple_of_five?(number)
+		number%BUZZ_NUMBER == 0
 	end
 end
