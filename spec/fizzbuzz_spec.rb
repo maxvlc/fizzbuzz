@@ -12,11 +12,8 @@ describe "fizzbuzz player" do
 		expect(Player.play(6)).to eq "Fizz"
 	end
 
-	it "prints Buzz if number is five" do
+	it "prints Buzz if number is divisible by five" do
 		expect(Player.play(5)).to eq "Buzz"
-	end
-
-	it "prints Buzz if number is ten" do
 		expect(Player.play(10)).to eq "Buzz"
 	end
 end
