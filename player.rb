@@ -4,18 +4,12 @@ class Player
 	BUZZ = "Buzz"
 	FIZZ_NUMBER = 3
 	BUZZ_NUMBER = 5
-	FIZZBUZZ = "FizzBuzz"
 
 	def self.play(number)
-	puts number
-		result = number.to_s
-	puts result
-		result = FIZZ if is_fizz?(number)
-	puts result
-		result = BUZZ if is_buzz?(number)
-	puts result
-		result = FIZZBUZZ if is_fizzbuzz?(number)
-	puts result
+		result = ""
+		result += FIZZ if is_fizz?(number)
+		result += BUZZ if is_buzz?(number)
+		result = number.to_s if result == ""
 		return result
 	end
 
@@ -35,7 +29,4 @@ class Player
 		number%BUZZ_NUMBER == 0
 	end
 
-	def self.is_fizzbuzz?(number)
-		is_fizz?(number) && is_buzz?(number)
-	end
 end
