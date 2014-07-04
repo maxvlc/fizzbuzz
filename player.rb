@@ -7,8 +7,8 @@ class Player
 
 	def self.play(number)
 		result = number.to_s
-		return FIZZ if is_fizz?(number)
-		return BUZZ if is_buzz?(number)
+		result = FIZZ if is_fizz?(number)
+		result = BUZZ if is_buzz?(number)
 		return result
 	end
 
