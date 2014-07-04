@@ -7,10 +7,15 @@ class Player
 	FIZZBUZZ = "FizzBuzz"
 
 	def self.play(number)
+	puts number
 		result = number.to_s
+	puts result
 		result = FIZZ if is_fizz?(number)
+	puts result
 		result = BUZZ if is_buzz?(number)
+	puts result
 		result = FIZZBUZZ if is_fizzbuzz?(number)
+	puts result
 		return result
 	end
 
