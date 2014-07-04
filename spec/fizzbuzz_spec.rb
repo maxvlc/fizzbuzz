@@ -2,11 +2,8 @@ require "./player"
 
 describe "fizzbuzz player" do
 
-	it "prints one if number is one" do
+	it "prints same number" do
 		expect(Player.play(1)).to eq "1"
-	end
-
-	it "prints two if number is two" do
 		expect(Player.play(2)).to eq "2"
 	end
 
@@ -14,4 +11,7 @@ describe "fizzbuzz player" do
 		expect(Player.play(3)).to eq "Fizz"
 	end
 
+	it "prints Buzz if number is five" do
+		expect(Player.play(5)).to eq "Buzz"
+	end
 end
