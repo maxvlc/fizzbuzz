@@ -10,4 +10,8 @@ require "./player"
     expect(Player.play(2)).to eq "2"    
   end
 
+  it "print Fizz if number is three" do
+    expect(Player.play(3)).to eq "Fizz"    
+  end  
+
 end
