@@ -9,6 +9,7 @@ class Player
 		result = number.to_s
 		result = FIZZ if fizz_number?(number)
 		result = BUZZ if buzz_number?(number)
+		result = FIZZ+BUZZ if fizzbuzz_number?(number)
 		result
 	end
 
@@ -18,5 +19,9 @@ class Player
 
 	def self.buzz_number?(number)
 		number % BUZZ_NUMBER == 0
+	end
+
+	def self.fizzbuzz_number?(number)
+		fizz_number?(number) && buzz_number?(number)
 	end
 end
