@@ -21,6 +21,8 @@ require "./player"
 
   it "print FizzBuzz if number is fifteen" do
     expect(Player.play(15)).to eq "FizzBuzz"
+    expect(Player.play(30)).to eq "FizzBuzz"
+    expect(Player.play(45)).to eq "FizzBuzz"
   end
 
 end
