@@ -15,7 +15,9 @@ require "./player"
   end  
 
   it "print Buzz if number is five" do
-    expect(Player.play(5)).to eq "Buzz"    
+    expect(Player.play(5)).to eq "Buzz"
+    expect(Player.play(10)).to eq "Buzz"
+    expect(Player.play(15)).to eq "Buzz"
   end
 
 end
