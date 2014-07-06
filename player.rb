@@ -8,6 +8,4 @@ class Player
 		result = FIZZ if number == FIZZ_NUMBER
 		result
 	end
-
-
 end

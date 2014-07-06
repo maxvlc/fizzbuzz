@@ -14,4 +14,8 @@ require "./player"
     expect(Player.play(3)).to eq "Fizz"    
   end  
 
+  it "print four if number is four" do
+    expect(Player.play(4)).to eq "4"    
+  end  
+
 end
