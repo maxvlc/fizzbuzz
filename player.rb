@@ -1,7 +1,7 @@
 class Player
 
-	def play(number)
-
+	def self.play(number)
+		"1"
 	end
 
 end
