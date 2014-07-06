@@ -1,7 +1,8 @@
 class Player
 
 	def self.play(number)
-		"1"
+		return number.to_s
 	end
+
 
 end
